@@ -290,8 +290,8 @@ a:hover {
 }
 
 .preloader .loading {
-  width: 80px;
-  height: 50px;
+  width: auto;
+  height: auto;
   position: relative;
 }
 
@@ -300,10 +300,10 @@ a:hover {
   padding: 0;
   margin: 0;
   color: #dfdfdf;
-  font-family: "Comforter", cursive;
-  -webkit-animation: text 3.5s ease both infinite;
-          animation: text 3.5s ease both infinite;
-  font-size: 12px;
+  font-family: "Montez", cursive;
+  -webkit-animation: text 1.5s ease both infinite;
+          animation: text 1.5s ease both infinite;
+  font-size: 4rem;
   letter-spacing: 1px;
 }
 
@@ -313,20 +313,10 @@ a:hover {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
-  40% {
-    letter-spacing: 2px;
-    -webkit-transform: translateX(26px);
-            transform: translateX(26px);
-  }
-  80% {
+  50% {
     letter-spacing: 1px;
     -webkit-transform: translateX(32px);
             transform: translateX(32px);
-  }
-  90% {
-    letter-spacing: 2px;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
   }
   100% {
     letter-spacing: 1px;
@@ -341,20 +331,10 @@ a:hover {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
-  40% {
-    letter-spacing: 2px;
-    -webkit-transform: translateX(26px);
-            transform: translateX(26px);
-  }
-  80% {
+  50% {
     letter-spacing: 1px;
     -webkit-transform: translateX(32px);
             transform: translateX(32px);
-  }
-  90% {
-    letter-spacing: 2px;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
   }
   100% {
     letter-spacing: 1px;
@@ -373,8 +353,8 @@ a:hover {
   position: absolute;
   -webkit-transform: translateX(64px);
           transform: translateX(64px);
-  -webkit-animation: loading 3.5s ease both infinite;
-          animation: loading 3.5s ease both infinite;
+  -webkit-animation: loading 1.5s ease both infinite;
+          animation: loading 1.5s ease both infinite;
 }
 
 .preloader .loading span:before {
@@ -384,8 +364,8 @@ a:hover {
   height: 100%;
   background-color: #dfdfdf;
   border-radius: inherit;
-  -webkit-animation: loading2 3.5s ease both infinite;
-          animation: loading2 3.5s ease both infinite;
+  -webkit-animation: loading2 1.5s ease both infinite;
+          animation: loading2 1.5s ease both infinite;
 }
 
 @-webkit-keyframes loading {
@@ -394,17 +374,7 @@ a:hover {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
-  40% {
-    width: 100%;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  80% {
-    width: 16px;
-    -webkit-transform: translateX(64px);
-            transform: translateX(64px);
-  }
-  90% {
+  50% {
     width: 100%;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
@@ -422,17 +392,7 @@ a:hover {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
-  40% {
-    width: 100%;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  80% {
-    width: 16px;
-    -webkit-transform: translateX(64px);
-            transform: translateX(64px);
-  }
-  90% {
+  50% {
     width: 100%;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
