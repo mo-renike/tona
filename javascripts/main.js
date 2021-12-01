@@ -25,3 +25,9 @@ nav.classList.add('show')
 close.addEventListener('click', () =>{
 nav.classList.remove('show')
 })
+
+
+//preloader and pop-up text
+window.onload = function () {
+  document.querySelector(".preloader").style.display = "none";
+};

@@ -1,131 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tona Clothings</title>
     <!-- Framework CDNs -->
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/main.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
 
-<body id="home">
+  <body id="home">
+    <div class="preloader">
+        <div class="loading">
+     <p>Loading Tona Clothings</p>
+           <span></span>
+        </div>
+     </div>
     <main>
-<nav class="nav">
-            <a href="./index.html" class="logo">TonaClothings</a>
+      <nav class="nav">
+        <a href="./index.html" class="logo">TonaClothings</a>
 
-            <div class="nav__wrapper">
-                <div class="nav__left">
-                    <a class="nav__link" href="#">About Tona</a>
-                    <a class="nav__link" href="#">Bridals</a>
-                    <a class="nav__link" href="#">Book Tona</a>
-
-                </div>
-                <div class="vertical-line"></div>
-                <div class="nav__right">
-                    <a class=" nav__link" href="#">Gallery</a>
-                    <a class=" nav__link" href="#">Link</a>
-                    <a class=" nav__link" href="#">Contact</a>
-                </div>
-            </div>
-            <address class="nav__address text-center">
-                <p>Ajah, Lekki, Lagos</p>
-                <div class="nav__socials">
-                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i></a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                    <a href="tel:+2349015488071" target="_blank"><i class="fa fa-phone"></i> </a>
-                    <a href="tel:+2349015488071" target="_blank"><i class="fab fa-whatsapp"></i> </a>
-                </div>
-            </address>
-            <button class="nav__close">X</button>
-        </nav>
-        <div class="hero">
-            <header>
-                <button class="toggler"><i class="fas fa-bars"></i></button>
-                <!-- <img src="" alt="" class="nav__logo"> -->
-                <a href="./index.html" class="logo p-2">TonaClothings</a>
-                <a href="./booking.html" class="pry-btn">Book Now <i class="fas fa-angle-double-right"></i></a>
-            </header>
-            <!-- navigation -->
-
-            <video poster="./assets/images/chalo-garcia-dI4ElId8ETQ-unsplash.jpg" autoplay playsinline muted loop>
-                <source src="./assets/videos/pexels-cottonbro-10211616.mp4" type="video/webm">
-                Video not supported
-            </video>
-            <div class="hero__text">
-                <h2>Fasion for every you</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ad repudiandae eius, officiis iste repellat expedita?</p> <br>
-                <a href="" class="action-btn">Schedule a consultation</a> 
-            </div>
-            <a href="#" class="arrow-container">
-                <div class="arrow"></div>
-                <div class="arrow"></div>
-                <div class="arrow"></div>
+        <div class="nav__wrapper">
+          <div class="nav__left">
+            <a class="nav__link" href="#">About Tona</a>
+            <a class="nav__link" href="#">Bridals</a>
+            <a class="nav__link" href="#">Book Tona</a>
+          </div>
+          <div class="vertical-line"></div>
+          <div class="nav__right">
+            <a class="nav__link" href="#">Gallery</a>
+            <a class="nav__link" href="#">Link</a>
+            <a class="nav__link" href="#">Contact</a>
+          </div>
+        </div>
+        <address class="nav__address text-center">
+          <p>Ajah, Lekki, Lagos</p>
+          <div class="nav__socials">
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              ><i class="fa fa-envelope"></i
+            ></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="tel:+2349015488071" target="_blank"
+              ><i class="fa fa-phone"></i>
             </a>
+            <a href="tel:+2349015488071" target="_blank"
+              ><i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </address>
+        <button class="nav__close">X</button>
+      </nav>
+      <div class="hero">
+        <header>
+          <button class="toggler"><i class="fas fa-bars"></i></button>
+          <!-- <img src="" alt="" class="nav__logo"> -->
+          <a href="./index.html" class="logo p-2">TonaClothings</a>
+          <a href="./booking.html" class="pry-btn"
+            >Book Now <i class="fas fa-angle-double-right"></i
+          ></a>
+        </header>
+        <!-- navigation -->
+
+        <video
+          poster="./assets/images/chalo-garcia-dI4ElId8ETQ-unsplash.jpg"
+          autoplay
+          playsinline
+          muted
+          loop
+        >
+          <source
+            src="./assets/videos/pexels-cottonbro-10211616.mp4"
+            type="video/webm"
+          />
+          Video not supported
+        </video>
+        <div class="hero__text">
+          <h2>Fasion for every you</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Ad repudiandae eius, officiis iste repellat expedita?
+          </p>
+          <br />
+          <a href="" class="action-btn">Schedule a consultation</a>
         </div>
-        
-        <!-- testimonial section -->
-        <!-- intro section -->
-        <div class="container intro">
+        <a href="#" class="arrow-container">
+          <div class="arrow"></div>
+          <div class="arrow"></div>
+          <div class="arrow"></div>
+        </a>
+      </div>
 
-            <div class="intro__left">
-                <h1>Bespoke Tailoring Brand</h1>
-            </div>
-
-            <div class="intro__right">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id perferendis consequatur voluptas dolore
-                    distinctio reprehenderit ipsam soluta deserunt, provident non?</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est error delectus dignissimos, itaque
-                    soluta, iste iusto voluptatibus aut non consectetur a neque?</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatibus illum harum iure
-                    veritatis facilis.</p>
-                <br>
-                <a href="./about.html" class="action-btn">Read More</a>
-            </div>
-
+      <!-- testimonial section -->
+      <!-- intro section -->
+      <div class="container intro">
+        <div class="intro__left">
+          <h1>Bespoke Tailoring Brand</h1>
         </div>
 
+        <div class="intro__right">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+            perferendis consequatur voluptas dolore distinctio reprehenderit
+            ipsam soluta deserunt, provident non?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est error
+            delectus dignissimos, itaque soluta, iste iusto voluptatibus aut non
+            consectetur a neque?
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            voluptatibus illum harum iure veritatis facilis.
+          </p>
+          <br />
+          <a href="./about.html" class="action-btn">Read More</a>
+        </div>
+      </div>
     </main>
     <footer class="footer p-5">
-            <a href="./index.html" class="logo p-2">TonaClothings</a> <br>
-            <div class="footer__actions">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms & Conditions</a>
-            </div> <br> <br>
-            <address class="nav__address text-center ">
-                <p>Ajah, Lekki, Lagos</p>
-                <div class="nav__socials">
-                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i></a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                    <a href="tel:+2349015488071" target="_blank"><i class="fa fa-phone"></i> </a>
-                    <a href="tel:+2349015488071" target="_blank"><i class="fab fa-whatsapp"></i> </a>
-                </div>
-            </address>
-        <a href="#home" class="footer__back-to-top">Back to top<i class="mx-3 fas fa-arrow-right"></i></a>
-        <p class="footer__footers"></p>
+      <a href="./index.html" class="logo p-2">TonaClothings</a> <br />
+      <div class="footer__actions">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+      <br />
+      <br />
+      <address class="nav__address text-center">
+        <p>Ajah, Lekki, Lagos</p>
+        <div class="nav__socials">
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><i class="fa fa-envelope"></i
+          ></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="tel:+2349015488071" target="_blank"
+            ><i class="fa fa-phone"></i>
+          </a>
+          <a href="tel:+2349015488071" target="_blank"
+            ><i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </address>
+      <a href="#home" class="footer__back-to-top"
+        >Back to top<i class="mx-3 fas fa-arrow-right"></i
+      ></a>
+      <p class="footer__footers"></p>
     </footer>
     <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <!-- swiper js -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./javascripts/main.js"></script>
-</body>
-
+  </body>
 </html>
