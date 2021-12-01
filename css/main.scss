@@ -1,0 +1,25 @@
+@import '../scss/abstracts/functions';
+@import '../scss/abstracts/config';
+@import '../scss/abstracts/mixins';
+
+
+@import '../scss/base/typography';
+
+@import '../scss/components/buttons';
+@import '../scss/components/carousel';
+@import '../scss/components/dropdown';
+@import '../scss/components/icons';
+@import '../scss/components/arrow';
+
+@import '../scss/layout/footer';
+@import '../scss/layout/forms';
+@import '../scss/layout/header';
+@import '../scss/layout/navigation';
+@import '../scss/layout/sidebar';
+
+@import '../scss/pages/booking';
+@import '../scss/pages/home';
+
+@import '../scss/vendors/bootstrap';
+@import '../scss/vendors/normalize';
+

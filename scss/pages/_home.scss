@@ -1,0 +1,29 @@
+.intro {
+    display: flex;
+    width: 100%;
+
+    &__left {
+        width: 60%;
+
+        h1 {
+            font-size: 11rem;
+            color: $background-color;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: $light-color;
+            font-family: $bold;
+        }
+    }
+
+    &__right {
+        display: flex;
+        padding: 3rem;
+        line-height: 2;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+
+        a {
+            width: max-content;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+header {
+    position: relative;
+    top: 0;
+    padding: 3rem;
+    align-items: center;
+    display: flex;
+    z-index: 2;
+    justify-content: space-between;
+
+    &.sticky {
+        transition: all 1.4s ease;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: $background-color;
+        z-index: 10;
+        padding: 0;
+        box-shadow: 2px 2px black;
+        a, .toggler{
+            color: $light-color;
+            padding: .9rem;
+        }
+    }
+
+    .toggler,
+    a {
+        color: $background-color;
+        font-size: 3rem;
+        &:hover{
+            color: $brand-color;
+        }
+    }
+    
+}
+
+.logo {
+        font-family: $cursive;
+        font-size: 3rem;
+    }

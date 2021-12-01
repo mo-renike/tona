@@ -1,0 +1,23 @@
+
+$background-color :#101010;
+$brand-color: #de0000;
+$light-color: #dfdfdf;
+$white :#ffffff;
+$border-radius-btn: 20px;
+$border-radius-box: 10px;
+$cursive: 'Comforter', cursive;
+$montez: 'Montez', cursive;
+$montserrat: 'Montserrat', sans-serif;
+$bold: 'Playfair Display', serif;
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body {
+    font-size: 18px;
+    background-color: $background-color;
+    color: $light-color;
+    font-family: $montserrat;
+}
+
