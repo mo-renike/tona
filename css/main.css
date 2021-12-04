@@ -506,7 +506,8 @@ a:hover {
 }
 
 header {
-  position: relative;
+  position: fixed;
+  width: 100%;
   top: 0;
   padding: 3rem;
   -webkit-box-align: center;
@@ -592,6 +593,8 @@ header a:hover {
   padding: 2rem 0;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  opacity: 0;
+  width: 0;
 }
 
 .nav.show {
@@ -615,11 +618,6 @@ header a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    background-color: red;
   }
 }
 
@@ -632,8 +630,7 @@ header a:hover {
 
 @media (max-width: 859px) {
   .nav__wrapper .vertical-line {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    display: none;
   }
 }
 
@@ -657,6 +654,12 @@ header a:hover {
   }
 }
 
+@media (max-width: 500px) {
+  .nav__link {
+    font-size: 1.2rem;
+  }
+}
+
 .nav__link:hover {
   text-decoration: underline;
 }
@@ -665,6 +668,7 @@ header a:hover {
   display: -ms-grid;
   display: grid;
   color: #dfdfdf;
+  margin: 1rem;
 }
 
 .nav__left {
