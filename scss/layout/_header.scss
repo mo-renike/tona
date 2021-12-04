@@ -26,6 +26,9 @@ header {
     a {
         color: $background-color;
         font-size: 3rem;
+        @include respond(medium) {
+            font-size: 1.3rem;
+        }
         &:hover{
             color: $brand-color;
         }
@@ -36,4 +39,7 @@ header {
 .logo {
         font-family: $cursive;
         font-size: 3rem;
+        @include respond(medium) {
+            font-size: 2rem;
+        }
     }

@@ -4,7 +4,9 @@
 
     &__left {
         width: 60%;
-
+        @include respond(medium) {
+            width: 100%;
+        }
         h1 {
             font-size: 11rem;
             color: $background-color;

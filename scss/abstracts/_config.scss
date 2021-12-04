@@ -21,3 +21,17 @@ body {
     font-family: $montserrat;
 }
 
+// Set text color based on bg
+@function set-text-color($color) {
+    @if(lightness($color) > 70) {
+      @return rgb(35, 35, 35);
+    } @else {
+      @return rgb(240, 240, 240);
+    }
+  }
+  
+  // Set background & text color
+  @mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color)
+  }
