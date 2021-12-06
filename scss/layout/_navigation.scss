@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
-
+overflow: hidden;
     transition: all 1s ease;
     opacity: 0;
     width: 0;
@@ -66,7 +66,7 @@
             font-size: 1.8rem;
         }
         @include respond(small) {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
         &:hover {
@@ -107,7 +107,9 @@
 
     address {
         font-family: $bold;
-
+        @include respond(medium) {
+            font-size: 1rem;
+        }
     }
 
     &__socials {
@@ -119,7 +121,6 @@
             border-radius: 50%;
             border: 1px solid;
             color: $light-color;
-
             padding: 10px;
             width: 40px;
             height: 40px;
@@ -128,6 +129,12 @@
             align-items: center;
             display: flex;
             justify-content: center;
+            @include respond(medium) {
+                font-size: .8rem;
+                margin: 3px;
+                width: 30px;
+                height: 30px;
+            }
         }
     }
 }
