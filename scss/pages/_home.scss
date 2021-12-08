@@ -1,31 +1,58 @@
 .intro {
     &__left {
         padding: 3rem;
-       display: flex;
+        display: flex;
+
         h1 {
-            font-size: 11rem;
+            font-size: 10rem;
             color: $background-color;
             -webkit-text-stroke-width: 2px;
-            -webkit-text-stroke-color: $light-color;
+            -webkit-text-stroke-color: $dark-gray;
             font-family: $bold;
+
             @include respond(medium) {
                 font-size: 7rem;
             }
+            @include respond(small) {
+                font-size: 4rem;
+            }
         }
-      
+
     }
 
     &__right {
+        color: $dark-gray;
         display: flex;
         padding: 3rem;
         line-height: 2;
         flex-direction: column;
         justify-content: center;
+
         @include respond(medium) {
-          margin: 0;
+            margin: 0;
         }
+
         a {
             width: max-content;
+            color: $dark-gray;
         }
     }
+}
+
+.slider {
+    &__text{
+        h1{
+            font-size: 8rem;
+            @include respond(medium) {
+                font-size: 4rem;
+            }
+            // @include respond(small) {
+            //     font-size: 4rem;
+            // }
+        }
+      
+    }
+  &__gallery{
+      max-height: 100vh;
+  }
 }

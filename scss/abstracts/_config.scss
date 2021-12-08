@@ -1,7 +1,8 @@
 
 $background-color :#101010;
 $brand-color: #de0000;
-$light-color: #dfdfdf;
+$light-color: #d8d8d8;
+$dark-gray :#414141;
 $white :#ffffff;
 $border-radius-btn: 20px;
 $border-radius-box: 10px;
@@ -21,7 +22,9 @@ body {
     width: 100vw;
     font-family: $montserrat;
 }
-
+h1, h2, h3, h4, h5{
+  font-family: $bold
+}
 // Set text color based on bg
 @function set-text-color($color) {
     @if(lightness($color) > 70) {
