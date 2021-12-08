@@ -246,7 +246,7 @@ a:hover {
 }
 
 .hero__text a {
-  background-color: #414141;
+  background-color: #7d7d7d;
 }
 
 .arrow-container {
@@ -515,7 +515,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #414141;
+  color: #7d7d7d;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -576,12 +576,12 @@ a:hover {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  color: #414141;
+  color: #7d7d7d;
 }
 
 .footer__footers {
   font-size: small;
-  color: #414141;
+  color: #7d7d7d;
   margin: 1rem auto;
 }
 
@@ -797,7 +797,7 @@ header a:hover {
   font-size: 10rem;
   color: #101010;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #414141;
+  -webkit-text-stroke-color: #7d7d7d;
   font-family: "Playfair Display", serif;
 }
 
@@ -814,7 +814,7 @@ header a:hover {
 }
 
 .intro__right {
-  color: #414141;
+  color: #7d7d7d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -839,7 +839,7 @@ header a:hover {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  color: #414141;
+  color: #7d7d7d;
 }
 
 .slider__text h1 {
