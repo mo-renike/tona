@@ -39,3 +39,30 @@ h1, h2, h3, h4, h5{
     background-color: $color;
     color: set-text-color($color)
   }
+
+  .socials {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    a{
+        border-radius: 50%;
+        border: 1px solid;
+        color: inherit;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        margin: 8px;
+        font-size: 1.2rem;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        @include respond(medium) {
+            font-size: .8rem;
+            margin: 3px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

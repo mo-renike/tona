@@ -1,6 +1,7 @@
 .footer {
     background-color: darken($background-color, 10);
     display: flex;
+    color: $dark-gray;
     flex-direction: column;
     text-align: center;
     position: relative;
@@ -15,7 +16,6 @@
             margin: 1rem;
             @include respond(medium) {
             margin: 6px;
-
             }
         }
     }
@@ -40,5 +40,11 @@
     address {
         margin: 1rem auto;
         width: max-content;
+        color: $dark-gray;
+    }
+    &__footers{
+        font-size: small;
+        color: $dark-gray;
+        margin: 1rem auto;
     }
 }
