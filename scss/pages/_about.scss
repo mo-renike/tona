@@ -1,0 +1,22 @@
+.about {
+
+    &__img {
+      img{
+          width: 90%;
+          height: 500px;
+          object-fit: cover;
+      }
+    }
+    &__text{
+        line-height: 1.5;
+    }
+&__info{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-between;
+    >*{
+        margin: 1rem;
+        // text-align: center;
+    }
+}
+}

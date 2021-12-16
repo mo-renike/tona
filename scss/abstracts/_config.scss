@@ -27,10 +27,10 @@ h1, h2, h3, h4, h5{
 }
 // Set text color based on bg
 @function set-text-color($color) {
-    @if(lightness($color) > 70) {
-      @return rgb(35, 35, 35);
+    @if(darkness($color) > 70) {
+      @return #d8d8d8;
     } @else {
-      @return rgb(240, 240, 240);
+      @return #101010;
     }
   }
   
@@ -65,4 +65,17 @@ h1, h2, h3, h4, h5{
             height: 30px;
         }
     }
+}
+
+hr{
+  color: rgba(234, 234, 234, 0.2);
+}
+
+h1.text::before{
+    display: inline-block;
+    content: "";
+    border-top: .3rem solid $dark-gray;
+    width: 5rem;
+    margin: 0 1rem;
+    transform: translateY(-1rem);
 }
