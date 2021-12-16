@@ -32,3 +32,8 @@ window.onload = function () {
   document.querySelector(".preloader").style.display = "none";
 };
 
+//swiper
+var swiper = new Swiper(".mySwiper", {
+  effect: "cards",
+  grabCursor: true,
+});

@@ -246,7 +246,7 @@ a:hover {
 }
 
 .hero__text a {
-  background-color: #7d7d7d;
+  background-color: #101010;
 }
 
 .arrow-container {
@@ -842,6 +842,10 @@ header a:hover {
   color: #7d7d7d;
 }
 
+.slider {
+  background-color: black;
+}
+
 .slider__text h1 {
   font-size: 8rem;
 }
@@ -852,8 +856,30 @@ header a:hover {
   }
 }
 
-.slider__gallery {
-  max-height: 100vh;
+.slider__gallery .swiper {
+  margin-top: 5rem;
+  width: 70%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.slider__gallery .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 18px;
+}
+
+.slider__gallery p {
+  opacity: .4;
+  margin: 1rem;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

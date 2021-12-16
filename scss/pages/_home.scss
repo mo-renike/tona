@@ -40,6 +40,7 @@
 }
 
 .slider {
+    background-color: darken($background-color, 10);
     &__text{
         h1{
             font-size: 8rem;
@@ -53,6 +54,24 @@
       
     }
   &__gallery{
-      max-height: 100vh;
+    .swiper {
+        margin-top: 5rem;
+        width: 70%;
+        height: max-content;
+      }
+      
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+        // font-size: 22px;
+        // font-weight: bold;
+        // color: #fff;
+      }
+      p{
+          opacity: .4;
+          margin: 1rem;
+      }
   }
 }
