@@ -1,0 +1,14 @@
+.contact{
+   
+    padding: 4rem;
+    &__form{
+        display: flex;
+        flex-direction: column;
+        >*{
+            margin: 7px;
+            outline: none;
+            padding: 15px;
+            border-radius: $border-radius-box;
+        }
+    }
+}

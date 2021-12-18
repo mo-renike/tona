@@ -46,5 +46,8 @@
         font-size: small;
         color: $dark-gray;
         margin: 1rem auto;
+        a{
+            color: $brand-color;
+        }
     }
 }

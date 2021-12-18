@@ -1,22 +1,27 @@
 .about {
 
     &__img {
-      img{
-          width: 90%;
-          height: 500px;
-          object-fit: cover;
-      }
+        img {
+            width: 70%;
+            height: 500px;
+            object-fit: cover;
+        }
     }
-    &__text{
+
+    &__text {
         line-height: 1.5;
     }
-&__info{
-    display: flex;
-    margin-top: 5rem;
-    justify-content: space-between;
-    >*{
-        margin: 1rem;
-        // text-align: center;
+
+    &__info {
+        display: flex;
+        border: 1px solid $dark-gray;
+        margin-top: 5rem;
+        justify-content: space-between;
+
+        >* {
+            margin: 1rem;
+            color: $dark-gray;
+            // text-align: center;
+        }
     }
-}
 }
