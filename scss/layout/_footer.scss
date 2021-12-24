@@ -1,4 +1,5 @@
 .footer {
+
     background-color: darken($background-color, 10);
     display: flex;
     color: $dark-gray;
@@ -6,16 +7,20 @@
     text-align: center;
     position: relative;
     padding: 4rem;
+
     @include respond(medium) {
         padding: 0;
         font-size: .8rem;
     }
+
     &__actions {
         display: flex;
-        a{
+
+        a {
             margin: 1rem;
+
             @include respond(medium) {
-            margin: 6px;
+                margin: 6px;
             }
         }
     }
@@ -30,10 +35,11 @@
         position: absolute;
         right: 5%;
         bottom: 40%;
+
         @include respond(medium) {
             right: 0;
-        bottom: 25%;
-        font-size: .7rem;
+            bottom: 25%;
+            font-size: .7rem;
         }
     }
 
@@ -42,12 +48,36 @@
         width: max-content;
         color: $dark-gray;
     }
-    &__footers{
+
+    &__footers {
         font-size: small;
         color: $dark-gray;
         margin: 1rem auto;
-        a{
+
+        a {
             color: $brand-color;
         }
     }
+
+    a {
+        position: relative;
+        color: inherit;
+        width: max-content;
+
+        &:after {
+            content: '';
+            display: block;
+            margin: auto;
+            height: 2px;
+            width: 0px;
+            background: transparent;
+            transition: width .5s ease;
+        }
+
+        &:hover:after {
+            width: 100%;
+            background: $brand-color;
+        }
+    }
+
 }

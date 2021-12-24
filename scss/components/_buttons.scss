@@ -15,8 +15,8 @@
     border: 2px solid;
     color: $light-color;
     box-shadow: 1px 1px 2px rgba($color: #000000, $alpha: .3);
-    
-    &:hover{
+
+    &:hover {
         transform: scale(.9);
     }
 }
@@ -27,12 +27,14 @@ button {
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+
+    transition: .3s ease;
 
     &:hover {
         color: $brand-color;
-        
+        margin-top: 3px;
     }
 }

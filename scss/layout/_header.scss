@@ -34,7 +34,26 @@ header {
             color: $brand-color;
         }
     }
+    a{
+        position: relative;
+        color: inherit;
+        width: max-content;
     
+        &:after {
+            content: '';
+            display: block;
+            margin: auto;
+            height: 2px;
+            width: 0px;
+            background: transparent;
+            transition: width .5s ease;
+        }
+    
+        &:hover:after {
+            width: 100%;
+            background: $brand-color;
+        }
+    }
 }
 
 .logo {

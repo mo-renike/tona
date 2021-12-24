@@ -215,18 +215,21 @@ button {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 a:hover {
   color: #de0000;
+  margin-top: 3px;
 }
 
 .hero {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   color: #101010;
 }
@@ -603,6 +606,30 @@ a:hover {
   color: #de0000;
 }
 
+.footer a {
+  position: relative;
+  color: inherit;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.footer a:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  -webkit-transition: width .5s ease;
+  transition: width .5s ease;
+}
+
+.footer a:hover:after {
+  width: 100%;
+  background: #de0000;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -654,6 +681,30 @@ header a {
 header .toggler:hover,
 header a:hover {
   color: #de0000;
+}
+
+header a {
+  position: relative;
+  color: inherit;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+header a:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  -webkit-transition: width .5s ease;
+  transition: width .5s ease;
+}
+
+header a:hover:after {
+  width: 100%;
+  background: #de0000;
 }
 
 .logo {
@@ -745,6 +796,29 @@ header a:hover {
   text-align: left;
   padding: 15px;
   font-family: "Playfair Display", serif;
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.nav__link:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  -webkit-transition: width .5s ease;
+  transition: width .5s ease;
+}
+
+.nav__link:hover:after {
+  width: 100%;
+  background: #de0000;
 }
 
 @media (max-width: 859px) {
@@ -757,10 +831,6 @@ header a:hover {
   .nav__link {
     font-size: 1rem;
   }
-}
-
-.nav__link:hover {
-  text-decoration: underline;
 }
 
 .nav .nav__left, .nav .nav__right {
@@ -898,6 +968,15 @@ header a:hover {
   margin: 1rem;
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .about__img img {
   width: 70%;
   height: 500px;
@@ -913,11 +992,20 @@ header a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid #7d7d7d;
   margin-top: 5rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 859px) {
+  .about__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
 }
 
 .about__info > * {

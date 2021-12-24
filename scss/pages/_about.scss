@@ -1,5 +1,6 @@
 .about {
-
+display: flex;
+justify-content: space-between;
     &__img {
         img {
             width: 70%;
@@ -14,10 +15,12 @@
 
     &__info {
         display: flex;
-        border: 1px solid $dark-gray;
         margin-top: 5rem;
         justify-content: space-between;
-
+        @include respond(medium) {
+          flex-direction: column;
+          text-align: center;
+        }
         >* {
             margin: 1rem;
             color: $dark-gray;
