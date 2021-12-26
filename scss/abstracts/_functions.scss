@@ -3,22 +3,22 @@
 $spaceamounts : (1, 2, 3, 4, 5);
 @each $space in $spaceamounts {
     .m-#{$space}{
-        margin: #{$space}rem;
+        margin: #{$space}em;
     }
     .mx-#{$space}{
-        margin: 0 #{$space}rem ;
+        margin: 0 #{$space}em ;
     }
     .my-#{$space}{
-        margin: #{$space}rem 0;
+        margin: #{$space}em 0;
     }
     .p-#{$space}{
-        padding: #{$space}rem ;
+        padding: #{$space}em ;
     }
     .px-#{$space}{
-       padding: #{$space}rem 0;
+       padding: #{$space}em 0;
     }
     .py-#{$space}{
-       padding: #{$space}rem 0;
+       padding: #{$space}em 0;
     }
 }
 

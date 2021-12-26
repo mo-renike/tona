@@ -2,7 +2,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    padding: 3rem;
+    padding: 2em;
     align-items: center;
     display: flex;
     z-index: 2;
@@ -15,30 +15,31 @@ header {
         width: 100%;
         background-color: $background-color;
         z-index: 10;
-        padding: 0;
-        box-shadow: 2px 2px black;
-        a, .toggler{
+        padding: 1em;
+        box-shadow: $box-shadow;
+
+        a,
+        .fa-bars {
             color: $light-color;
-            padding: .9rem;
         }
     }
 
     .toggler,
     a {
-        color: $background-color;
-        font-size: 3rem;
+        color: $light-color;
+        font-size: 2em;
+
         @include respond(medium) {
-            font-size: 1.3rem;
+            font-size: 1em;
         }
-        &:hover{
-            color: $brand-color;
-        }
+
     }
-    a{
+
+    a {
         position: relative;
         color: inherit;
         width: max-content;
-    
+
         &:after {
             content: '';
             display: block;
@@ -48,7 +49,7 @@ header {
             background: transparent;
             transition: width .5s ease;
         }
-    
+
         &:hover:after {
             width: 100%;
             background: $brand-color;
@@ -57,9 +58,10 @@ header {
 }
 
 .logo {
-        font-family: $cursive;
-        font-size: 3rem;
-        @include respond(medium) {
-            font-size: 2rem;
-        }
+    font-family: $cursive;
+    font-size: 3em;
+
+    @include respond(medium) {
+        font-size: 1em;
     }
+}
