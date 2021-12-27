@@ -1,14 +1,30 @@
-.contact{
-   
+.contact {
+
     padding: 4em;
-    &__form{
+
+    &__form {
         display: flex;
         flex-direction: column;
-        >*{
+
+        >* {
             margin: 7px;
+            border: none;
             outline: none;
             padding: 15px;
             border-radius: $border-radius-box;
+
+        }
+    }
+
+    &__map {
+        overflow: hidden;
+        // background: none !important;
+        height: 100%;
+        padding: 1em;
+
+        iframe {
+            width: 100%;
+            height: 100%;
         }
     }
 }
