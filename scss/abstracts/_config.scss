@@ -96,14 +96,14 @@ hr {
 
 }
 
-h1.text::before {
-  display: inline-block;
-  content: "";
-  border-top: 3px solid $dark-gray;
-  width: .4em;
-  margin: 0 3px;
-  transform: translateY(-1px);
-}
+// h1.text::before {
+//   display: inline-block;
+//   content: "";
+//   border-top: 3px solid $dark-gray;
+//   width: .4em;
+//   margin: 0 3px;
+//   transform: translateY(-1px);
+// }
 
 
 
