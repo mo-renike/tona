@@ -2,7 +2,8 @@
     background-color: lighten($color: #000000, $amount: 0);
 
     .about__stats {
-        margin:  2em;
+        margin: 2em;
+
         >* {
             color: $dark-gray !important;
         }
@@ -49,7 +50,11 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+           
         }
+    }
+    @include respond(small) {
+      display: none;
     }
 }
 
@@ -59,13 +64,32 @@
 
     .mySwiper2 {
         height: 100%;
+
         .swiper-wrapper {
+            position: relative;
+
             img {
                 display: block;
                 height: 100%;
                 object-fit: contain;
                 // object-position: 10% 50%;
                 margin-right: auto;
+            }
+
+            .swiper-text {
+                color: initial;
+                position: absolute;
+                padding: 2em;
+                right: 30%;
+                top: 50%;
+                display: flex;
+                flex-direction: column;
+                transform: translate(50%, -50%);
+                a{
+                    margin: 2em 0;
+                    width: max-content;
+                    color: initial;
+                }
             }
         }
     }
