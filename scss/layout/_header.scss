@@ -7,6 +7,7 @@ header {
     display: flex;
     z-index: 2;
     justify-content: space-between;
+    font-family: $bold;
 
     &.sticky {
         transition: all 1.4s ease;

@@ -1,4 +1,3 @@
-
 $background-color :#101010;
 $brand-color: #de0000;
 $light-color: #d8d8d8;
@@ -6,90 +5,128 @@ $dark-gray :#7d7d7d;
 $white :#ffffff;
 $border-radius-btn: 20px;
 $border-radius-box: 10px;
-$cursive: 'Comforter', cursive;
-$montez: 'Montez', cursive;
-$montserrat: 'Montserrat', sans-serif;
-$bold: 'Playfair Display', serif;
+$cursive: 'Comforter',
+cursive;
+$montez: 'Montez',
+cursive;
+$montserrat: 'Montserrat',
+sans-serif;
+$bold: 'Playfair Display',
+serif;
 $box-shadow: 2px 2px black;
 
-html{
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
+
 body {
-    font-size: 18px;
-    background-color: $background-color;
-    color: $light-color;
-    width: 100vw;
-    max-width: 100vw;
-    font-family: $montserrat;
-    @include respond(medium) {
-      font-size: 15px;
+  font-size: 18px;
+  background-color: $background-color;
+  color: $light-color;
+  width: 100vw;
+  max-width: 100vw;
+  font-family: $bold;
+
+  @include respond(medium) {
+    font-size: 15px;
   }
 
   @include respond(small) {
-      font-size: 13px;
+    font-size: 13px;
   }
 }
-h1, h2, h3, h4, h5{
+
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: $bold
 }
+
 // Set text color based on bg
 @function set-text-color($color) {
-    @if(darkness($color) > 70) {
-      @return #d8d8d8;
-    } @else {
-      @return #101010;
-    }
-  }
-  
-  // Set background & text color
-  @mixin set-background($color) {
-    background-color: $color;
-    color: set-text-color($color)
+  @if(darkness($color) > 70) {
+    @return #d8d8d8;
   }
 
-  .socials {
+  @else {
+    @return #101010;
+  }
+}
+
+// Set background & text color
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color)
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+  a {
+    border-radius: 50%;
+    border: 1px solid;
+    color: inherit;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+    font-size: 1.2em;
+    align-items: center;
     display: flex;
-    justify-content: space-between;
-    text-align: center;
+    justify-content: center;
 
-    a{
-        border-radius: 50%;
-        border: 1px solid;
-        color: inherit;
-        padding: 10px;
-        width: 40px;
-        height: 40px;
-        margin: 8px;
-        font-size: 1.2em;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-
-        @include respond(medium) {
-            font-size: .8em;
-            margin: 3px;
-            width: 30px;
-            height: 30px;
-        }
+    @include respond(medium) {
+      font-size: .8em;
+      margin: 3px;
+      width: 30px;
+      height: 30px;
     }
+  }
 }
 
-hr{
-  color: rgba(234, 234, 234, 0.2);
+hr {
+  color: rgba(212, 187, 187, 0.2);
 
 }
 
-h1.text::before{
-    display: inline-block;
-    content: "";
-    border-top: 3px solid $dark-gray;
-    width: .4em;
-    margin: 0 3px;
-    transform: translateY(-1px);
+h1.text::before {
+  display: inline-block;
+  content: "";
+  border-top: 3px solid $dark-gray;
+  width: .4em;
+  margin: 0 3px;
+  transform: translateY(-1px);
 }
 
-.black-text{
-  color: $background-color;
+
+
+.big-text {
+  margin-top: 2em;
+  display: flex;
+  h1 {
+    font-size: 8em;
+    margin:auto;
+    color: $background-color;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: $dark-gray;
+    font-family: $bold;
+
+    @include respond(medium) {
+      font-size: 5em;
+      -webkit-text-stroke-width: 1px;
+    }
+
+    @include respond(small) {
+      font-size: 2.5em;
+    }
+  }
+
+}
+marquee{
+  margin-top: 2em;
 }

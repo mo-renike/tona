@@ -1,85 +1,72 @@
 .intro {
-    &__left {
-       margin-top: 4em;
-        display: flex;
+    background-color: lighten($color: #000000, $amount: 0);
 
-        h1 {
-            font-size: 9em;
-            color: $background-color;
-            -webkit-text-stroke-width: 2px;
-            -webkit-text-stroke-color: $dark-gray;
-            font-family: $bold;
-
-            @include respond(medium) {
-                font-size: 6em;
-                -webkit-text-stroke-width: 1px;
-            }
-
-            @include respond(small) {
-                font-size: 3em;
-            }
+    .about__stats {
+        margin:  2em;
+        >* {
+            color: $dark-gray !important;
         }
-
     }
 
-    &__right {
-        color: $dark-gray;
-        display: flex;
-        padding: 3em;
-        line-height: 2;
-        flex-direction: column;
-        justify-content: center;
+}
 
-        @include respond(medium) {
-            margin: 0;
+.product-slider {
+    margin: 2em auto;
+
+    .swiper {
+        width: 100%;
+        height: 500px;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        position: relative;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+        h4 {
+            position: absolute;
+            bottom: 0;
+            padding: 10px;
+            background-color: darken($color: #000000, $amount: 0);
+
         }
 
-        a {
-            width: max-content;
-            color: $dark-gray;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }
 
-.slider {
-    padding: 4em 6em;
+.swipers {
+    height: 650px;
+    background-color: $light-color;
 
-    // background-color: darken($background-color, 10);
-    &__text {
-        h1 {
-            font-size: 6em;
-            margin: 0;
-
-            @include respond(medium) {
-                font-size: 4em;
+    .mySwiper2 {
+        height: 100%;
+        .swiper-wrapper {
+            img {
+                display: block;
+                height: 100%;
+                object-fit: contain;
+                // object-position: 10% 50%;
+                margin-right: auto;
             }
-
-            // @include respond(small) {
-            //     font-size: 4em;
-            // }
-        }
-
-    }
-
-    &__gallery {
-        .swiper {
-            width: 70%;
-            height: 500px;
-        }
-
-        .swiper-slide {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 18px;
-            // font-size: 22px;
-            // font-weight: bold;
-            // color: #fff;
-        }
-
-        p {
-            opacity: .4;
-            margin: 1em;
         }
     }
 }
