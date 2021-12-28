@@ -2,7 +2,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    padding: 2em 1em;
+    padding: 3em 1em;
     align-items: center;
     display: flex;
     z-index: 2;
@@ -24,7 +24,9 @@ header {
             color: $light-color !important;
         }
     }
-
+.toggler{
+    margin-left: 1em;
+}
     .toggler,
     a {
         color: $light-color;

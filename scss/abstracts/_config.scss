@@ -112,10 +112,10 @@ h1.text::before {
   display: flex;
   h1 {
     font-size: 8em;
-    margin:auto;
-    color: $background-color;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: $dark-gray;
+    margin: .5em auto;
+    color: $dark-gray;
+    // -webkit-text-stroke-width: 2px;
+    // -webkit-text-stroke-color: $dark-gray;
     font-family: $bold;
 
     @include respond(medium) {
