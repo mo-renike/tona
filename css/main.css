@@ -681,7 +681,7 @@ header.sticky {
 
 header.sticky a,
 header.sticky .fa-bars {
-  color: #d8d8d8;
+  color: #d8d8d8 !important;
 }
 
 header .toggler,
