@@ -1,6 +1,6 @@
 $total-arrows: 3;
 $arrow-line-length: 25px;
-$arrow-line-width: 4px;
+$arrow-line-width: 3px;
 
 // arrow animtion + choose direction
 @mixin arrow-transitions($rot: 0deg) {
@@ -12,11 +12,11 @@ $arrow-line-width: 4px;
 .arrow-container {
   display: block;
   z-index: 2;
-  width: 100px;
+  width: 80px;
   height: 100px;  
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 5px;
+  right: 5px;
   @include arrow-transitions(0deg);
   &:hover {
     cursor: pointer;

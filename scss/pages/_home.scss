@@ -50,23 +50,27 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-           
+
         }
     }
+
     @include respond(small) {
-      display: none;
+        display: none;
     }
 }
 
 .swipers {
-    height: 650px;
+    height: 60vh;
     background-color: $light-color;
+    padding: 0;
 
     .mySwiper2 {
         height: 100%;
-
+        padding: 0;
+        
         .swiper-wrapper {
             position: relative;
+            padding: 0;
 
             img {
                 display: block;
@@ -74,23 +78,57 @@
                 object-fit: contain;
                 // object-position: 10% 50%;
                 margin-right: auto;
+
+                // @include respond(small) {
+                //     width: 100%;
+                // }
             }
 
             .swiper-text {
                 color: initial;
                 position: absolute;
                 padding: 2em;
-                right: 30%;
+                right: 20%;
                 top: 50%;
+                width: 50%;
                 display: flex;
                 flex-direction: column;
                 transform: translate(50%, -50%);
-                a{
+              
+                a {
                     margin: 2em 0;
                     width: max-content;
                     color: initial;
                 }
             }
+        }
+    }
+}
+
+.book {
+    position: relative;
+    height: 40vh;
+
+    &__text {
+        position: absolute;
+        top: 40%;
+        right: 0;
+        transform: translate(-50% -50%);
+
+        @include respond(small) {
+            width: 80%;
+        }
+
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-position: 50% -30%;
+        object-fit: cover;
+
+        @include respond(small) {
+            display: none;
         }
     }
 }

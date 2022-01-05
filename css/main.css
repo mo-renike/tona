@@ -231,7 +231,7 @@ marquee {
 
 .pry-btn, .action-btn {
   font-size: 1em;
-  border-radius: 20px;
+  border-radius: 0px;
   padding: .8em 1.6em;
   font-weight: bold;
   cursor: pointer;
@@ -239,7 +239,6 @@ marquee {
 
 .action-btn {
   border: 2px solid;
-  color: #d8d8d8;
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
           box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
@@ -271,7 +270,6 @@ a:hover {
   position: relative;
   height: 100vh;
   width: 100%;
-  color: #101010;
 }
 
 .hero video {
@@ -295,16 +293,12 @@ a:hover {
   font-family: "Playfair Display", serif;
   left: 3em;
   font-weight: lighter;
+  color: #101010;
 }
 
 .hero__text h2 {
   font-size: 4em;
-  color: #101010;
   text-transform: capitalize;
-}
-
-.hero__text a {
-  background-color: #101010;
 }
 
 .slide-left {
@@ -356,11 +350,11 @@ a:hover {
 .arrow-container {
   display: block;
   z-index: 2;
-  width: 100px;
+  width: 80px;
   height: 100px;
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 5px;
+  right: 5px;
   -webkit-transform: translate(-50%, -50%) rotateZ(0deg);
           transform: translate(-50%, -50%) rotateZ(0deg);
 }
@@ -399,7 +393,7 @@ a:hover {
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
   background: #101010;
-  width: 4px;
+  width: 3px;
   height: 25px;
   border-radius: 10px;
   -webkit-transform: translate(-50%, -50%) rotateZ(-45deg);
@@ -1018,16 +1012,19 @@ header a:hover:after {
 }
 
 .swipers {
-  height: 650px;
+  height: 60vh;
   background-color: #d8d8d8;
+  padding: 0;
 }
 
 .swipers .mySwiper2 {
   height: 100%;
+  padding: 0;
 }
 
 .swipers .mySwiper2 .swiper-wrapper {
   position: relative;
+  padding: 0;
 }
 
 .swipers .mySwiper2 .swiper-wrapper img {
@@ -1042,8 +1039,9 @@ header a:hover:after {
   color: initial;
   position: absolute;
   padding: 2em;
-  right: 30%;
+  right: 20%;
   top: 50%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1061,6 +1059,40 @@ header a:hover:after {
   width: -moz-max-content;
   width: max-content;
   color: initial;
+}
+
+.book {
+  position: relative;
+  height: 40vh;
+}
+
+.book__text {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  -webkit-transform: translate(-50% -50%);
+          transform: translate(-50% -50%);
+}
+
+@media (max-width: 419px) {
+  .book__text {
+    width: 80%;
+  }
+}
+
+.book__img {
+  height: 100%;
+  width: 100%;
+  -o-object-position: 50% -30%;
+     object-position: 50% -30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 419px) {
+  .book__img {
+    display: none;
+  }
 }
 
 .about {

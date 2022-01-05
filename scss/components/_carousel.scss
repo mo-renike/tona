@@ -2,7 +2,6 @@
   position: relative;
   height: 100vh;
   width: 100%;
-  color: $background-color;
 
   video {
     position: absolute;
@@ -22,18 +21,18 @@
     text-align: left;
     font-family: $bold;
     left: 3em;
-    font-weight: lighter;
+    font-weight: lighter; 
+    color: $background-color;
     // width: 100%;
 
     h2 {
       font-size: 4em;
-      color: $background-color;
       text-transform: capitalize;
       // text-shadow: 2px 2px 2px #000, 2px 2px 2px #000, ;
     }
-    a{
-      background-color: $background-color;
-    }
+    // a{
+    //  color: $background-color;
+    // }
   }
 }
 

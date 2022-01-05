@@ -11,7 +11,6 @@ const navbarScroll = () => {
 window.onscroll = navbarScroll;
 
 
-console.log(navbar);
 
 //navigation 
 
