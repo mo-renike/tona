@@ -1064,19 +1064,22 @@ header a:hover:after {
 .book {
   position: relative;
   height: 40vh;
+  padding: 0;
 }
 
 .book__text {
   position: absolute;
-  top: 40%;
-  right: 0;
+  bottom: 20%;
+  padding: 1em;
+  right: 5%;
   -webkit-transform: translate(-50% -50%);
           transform: translate(-50% -50%);
+  width: 70%;
 }
 
 @media (max-width: 419px) {
   .book__text {
-    width: 80%;
+    width: 90%;
   }
 }
 
