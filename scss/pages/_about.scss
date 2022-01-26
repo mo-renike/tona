@@ -39,15 +39,15 @@
     margin: 2rem auto;
 
     @include respond(large) {
-        grid-tremplate-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     @include respond(medium) {
-        grid-tremplate-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     @include respond(small) {
-        grid-tremplate-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     h3 {
