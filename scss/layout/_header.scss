@@ -2,7 +2,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    padding: 3em 1em;
+    padding: 3rem 1rem;
     align-items: center;
     display: flex;
     z-index: 2;
@@ -16,7 +16,7 @@ header {
         width: 100%;
         background-color: $background-color;
         z-index: 10;
-        padding: 1em;
+        padding: 1rem;
         box-shadow: $box-shadow;
 
         a,
@@ -26,16 +26,16 @@ header {
     }
 
     .toggler {
-        margin-left: 1.2em;
+        margin-left: 1.2rem;
     }
 
     .toggler,
     a {
         color: $light-color;
-        font-size: 2em;
+        font-size: 2rem;
 
         @include respond(medium) {
-            font-size: 1em;
+            font-size: 1rem;
         }
     }
 
@@ -63,9 +63,9 @@ header {
 
 .logo {
     font-family: $cursive;
-    font-size: 2.4em;
+    font-size: 2.4rem;
 
     @include respond(medium) {
-        font-size: 1em;
+        font-size: 1rem;
     }
 }

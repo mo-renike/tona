@@ -15,7 +15,7 @@
 
     &__info {
         display: flex;
-        margin-top: 5em;
+        margin-top: 5rem;
         justify-content: space-between;
 
         @include respond(medium) {
@@ -24,7 +24,7 @@
         }
 
         >* {
-            margin: 1em;
+            margin: 1rem;
             color: $dark-gray;
             // text-align: center;
         }
@@ -33,21 +33,21 @@
 
 .about__stats {
     display: grid;
-    grid-gap: 2em;
+    grid-gap: 2rem;
     border-radius: $border-radius-box;
-    padding: 2em;
-    margin: 2em auto;
+    padding: 2rem;
+    margin: 2rem auto;
 
     @include respond(large) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-tremplate-columns: repeat(3, 1fr);
     }
 
     @include respond(medium) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-tremplate-columns: repeat(3, 1fr);
     }
 
     @include respond(small) {
-        grid-template-columns: repeat(1, 1fr);
+        grid-tremplate-columns: repeat(1, 1fr);
     }
 
     h3 {
@@ -56,13 +56,13 @@
     }
 
     i {
-        font-size: 2em;
+        font-size: 2rem;
         margin: 8px auto;
     }
 
     >* {
         border-radius: $border-radius-box;
-        padding: 1em;
+        padding: 1rem;
         background-color: $background-color;
         text-align: center;
         font-family: $montserrat;

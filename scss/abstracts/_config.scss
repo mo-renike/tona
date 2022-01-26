@@ -14,10 +14,10 @@ $box-shadow: 2px 2px black;
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  font-size: 62.5%;
 }
 
 body {
-  font-size: 17px;
   background-color: $background-color;
   color: $light-color;
   width: 100vw;
@@ -25,23 +25,9 @@ body {
   letter-spacing: 1px;
   max-width: 100vw;
   font-family: $bold;
-
-  @include respond(medium) {
-    font-size: 14px;
-  }
-
-  @include respond(small) {
-    font-size: 13px;
-  }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: $bold
-}
+
 
 // Set text color based on bg
 @function set-text-color($color) {

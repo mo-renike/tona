@@ -7,11 +7,6 @@
     position: relative;
     padding: 4rem;
 
-    @include respond(medium) {
-        padding: 0;
-        font-size: .8rem;
-    }
-
     &__actions {
         display: flex;
 
@@ -38,7 +33,6 @@
         @include respond(medium) {
             right: 0;
             bottom: 25%;
-            font-size: .7rem;
         }
     }
 

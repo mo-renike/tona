@@ -11,7 +11,7 @@
     color: $light-color;
     justify-content: space-between;
     align-items: center;
-    padding: 2em 0;
+    padding: 2rem 0;
     overflow: hidden;
     transition: all 1s ease;
     // opacity: 0;
@@ -56,7 +56,7 @@
 
     &__link {
         color: $light-color;
-        font-size: 2.6em;
+        font-size: 2.6rem;
         letter-spacing: 2;
         text-align: left;
         padding: 15px;
@@ -83,11 +83,11 @@
         }
 
         @include respond(medium) {
-            font-size: 1.8em;
+            font-size: 1.8rem;
         }
 
         @include respond(small) {
-            font-size: 1em;
+            font-size: 1rem;
         }
 
 
@@ -96,24 +96,24 @@
     %both {
         display: grid;
         color: $light-color;
-        margin: 1em
+        margin: 1rem
     }
 
     &__left {
         @extend %both;
-        margin-right: 3em;
+        margin-right: 3rem;
     }
 
     &__right {
         @extend %both;
-        margin-left: 3em;
+        margin-left: 3rem;
     }
 
     &__close {
         position: absolute;
-        top: 1em;
-        left: 1em;
-        font-size: 3em;
+        top: 1rem;
+        left: 1rem;
+        font-size: 3rem;
         padding: 20px;
         font-weight: bolder;
         font-family: $montez;
@@ -128,7 +128,7 @@
         font-family: $bold;
 
         @include respond(medium) {
-            font-size: 1em;
+            font-size: 1rem;
         }
     }
 }

@@ -2,7 +2,7 @@
     background-color: lighten($color: #000000, $amount: 10);
 
     .about__stats {
-        margin: 2em;
+        margin: 2rem;
 
         >* {
             color: $dark-gray !important;
@@ -12,7 +12,7 @@
 }
 
 .product-slider {
-    margin: 2em auto;
+    margin: 2rem auto;
 
     .swiper {
         width: 100%;
@@ -87,7 +87,7 @@
             .swiper-text {
                 color: initial;
                 position: absolute;
-                padding: 2em;
+                padding: 2rem;
                 right: 20%;
                 top: 50%;
                 width: 50%;
@@ -97,7 +97,7 @@
               
                 
                 a {
-                    margin: 2em 0;
+                    margin: 2rem 0;
                     width: max-content;
                     color: initial;
                 }
@@ -113,15 +113,15 @@
 
     &__text {
         position: absolute;
-        bottom: 20%;
-        // background-color: red;
-        padding: 1em;
-        right: 5%;
-        transform: translate(-50% -50%);
-        width: 70%;
+        bottom: 30%;
+        padding: 2rem;
+        left: 50%;
+        transform: translate(-50% 50%);
+        // width: 70%;
 
         @include respond(small) {
-            width: 90%;
+            // width: 90%;
+            left: auto;
         }
 
     }
@@ -129,7 +129,7 @@
     &__img {
         height: 100%;
         width: 100%;
-        object-position: 50% -30%;
+        // object-position: 50% -50%;
         object-fit: cover;
 
         @include respond(small) {
